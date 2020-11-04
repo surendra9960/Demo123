@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JForce Test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body{
+			background-image: url(Image/bg-img.jpg);
+			height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+		}
+		#wrapper {
+           padding-left: 0;
+           -webkit-transition: all 0.5s ease;
+           -moz-transition: all 0.5s ease;
+           -o-transition: all 0.5s ease;
+           transition: all 0.5s ease;
+        }
+        #sidebar-wrapper {
+            z-index: 1000;
+            position: fixed;
+            right: 250px;
+            width: 0;
+            height: 100%;
+            margin-right: -250px;
+            overflow-y: auto;
+            background: white;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+        #wrapper {
+            padding-right: 100px;
+        }
+        #sidebar-wrapper {
+           width: 100px;
+        }
+       a{
+	       color: black;
+        }
+        .white-box{
+	       background-color: white;
+           color: black;
+           margin: auto;
+           margin-top: 20%;
+           border: 1px solid gray;
+           padding: 50px;
+        }
+        @media (max-width: 450px) {
+            .white-box{
+ 	            margin: auto;
+                padding: 10px;
+                margin-top: 50%;
+                margin-left: 12%;
+            }
+            #sidebar-wrapper {
+                width: 80px;
+            }
+        }
+        h4{
+	        text-transform: uppercase;
+        }
+       .btn-default{
+	        background-color: #FF3372;
+	        border-color: #FF3372;
+	       color: white;
+        }
+    </style>
+</head>
+<body>
+	<div id="wrapper">
+        <div id="sidebar-wrapper">
+            <ul class ="list-unstyled mt-5 pt-5" >
+                <li class="text-center">
+                    <a href="#" >
+                	   <i class="fa fa-download"></i>
+                	   <p>Hotel Applicaton</p>
+                    </a>
+                </li><hr>
+                <li class="text-center">
+                    <a href="#">
+                	   <i class="fa fa-eye"></i>
+                	   <p>View Applicaton</p>
+                    </a>
+                </li><hr>
+                <li class="text-center">
+                    <a href="#">
+                	   <i class="fa fa-download"></i>
+                	   <p>Deposite Refund</p>
+                    </a>
+                </li><hr>
+                <li class="text-center">
+                    <a href="#">
+                	   <i class="fa fa-phone"></i>
+                	   <p>Support</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+    		<div class="row">
+    			<div class="white-box ">
+    				<form>
+    					<h4 class="text-center">Welcome to NMIMS LSM Portal</h4>
+                        <div class="form-group mt-4">
+                            <label for="username">Enter your username<span style="color: red">*</span></label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Enter your Password<span style="color: red">*</span></label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-default btn-block mt-5">Login</button>
+                    </form>
+    			</div>
+    		</div>
+        </div>
+    </div>
+</body>
+</html>
